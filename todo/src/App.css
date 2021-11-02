@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700;800;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root{
+  --poppins: 'Poppins', sans-serif;
+  --nunito: 'Nunito', sans-serif;
+  --darkBlue: #112031;
+  --greyishGreen: #152D35;
+  --paleBlue: #345B63;
+  --white: #D4ECDD;
+}
+input, button, textarea{
+  outline: none;
+  border: 1px solid transparent;
+  display: block;
+  background-color: #fff;
+}
+.divider {
+  width: 90%;
+  height: 3px;
+  background-color: #d4d4d4;
+  border-radius: 5px;
+  margin: 0 auto;
+}
+.slideUp{
+  animation: slideUp .2s ease-in .1s forwards;
+}
+@keyframes slideUp {
+  from{
+    opacity: 1;
+    transform: translateY(0);
+  }
+  to{
+    opacity: 0;
+    transform: translateY(-100%);
+  }
+}

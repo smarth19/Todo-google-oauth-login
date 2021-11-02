@@ -1,0 +1,173 @@
+@import "../../App.css";
+
+.header {
+  width: 100%;
+  display: flex;
+  font-size: 30px;
+  align-items: center;
+  padding: 20px;
+  font-family: var(--nunito);
+  font-weight: 700;
+  color: #fff;
+  background-color: dimgrey;
+}
+.section {
+  margin: 20px 0 0 0;
+}
+.addNoteDiv {
+  display: flex;
+  flex-direction: column;
+  width: 35%;
+  margin: 20px auto;
+}
+.addNoteDiv > h1 {
+  font-family: var(--poppins);
+  font-weight: 500;
+  padding: 10px;
+  text-align: center;
+}
+.inputDiv {
+  width: 100%;
+  border: 2px solid var(--paleBlue);
+  border-radius: 5px;
+  padding: 1px;
+}
+.titleInput,
+.detailTextarea {
+  width: 100%;
+  padding: 10px;
+  font-size: 20px;
+  font-family: var(--poppins);
+}
+.titleInput::placeholder,
+.detailTextarea::placeholder {
+  font-family: var(--poppins);
+}
+.detailTextarea {
+  resize: vertical;
+  min-height: 82px;
+  max-height: 200px;
+}
+.submitDiv {
+  display: flex;
+  justify-content: flex-end;
+}
+.submitDiv > button {
+  width: 100%;
+  border: none;
+  background-color: #345b6373;
+  margin: 5px 0;
+  color: #fff;
+  border-radius: 20px;
+}
+.savedNotesSection {
+  padding: 10px;
+}
+.savedNotesSection > h1 {
+  font-family: var(--poppins);
+  font-weight: 500;
+  padding: 10px;
+}
+.savedNotes {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+.noteDiv {
+  width: calc(100% / 3.2);
+  margin: 0 10px 20px 10px;
+  border: 2px solid var(--darkBlue);
+  border-radius: 10px;
+}
+.noteDiv > .titleDiv{
+  width: 100%;
+  padding: 10px;
+  border-bottom: 2px solid var(--darkBlue);
+  border-radius: 10px 10px 0 0;
+  background-color: bisque;
+}
+.noteDiv > .titleDiv > h2 {
+  font-family: var(--nunito);
+  font-weight: 600;
+  word-break: break-all;
+}
+.noteDiv .titleInput, .noteDiv .detailTextarea{
+  background-color: transparent;
+  border-radius: 10px;
+  border: 2px solid rgba(0, 0, 0, 0.562);
+}
+.noteDiv > .detailDiv{
+  width: 100%;
+  padding: 10px;
+  background-color: antiquewhite;
+}
+.noteDiv > .detailDiv > p {
+  font-family: var(--poppins);
+  font-weight: 500;
+}
+.btnsDiv {
+  display: flex;
+  justify-content: flex-end;
+  background-color: antiquewhite;
+  padding: 0 0 5px 0;
+  border-radius: 0 0 10px 10px;
+}
+.btnStyle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 10px;
+  border: 2px solid;
+  border-radius: 5px;
+  font-size: 18px;
+  font-family: var(--poppins);
+  margin: 0 5px 0 10px;
+  font-weight: 500;
+}
+.btnStyle:hover {
+  cursor: pointer;
+}
+.editBtn {
+  color: var(--greyishGreen);
+  border-color: var(--greyishGreen);
+}
+.deleteBtn {
+  color: #c93838;
+  border-color: #c93838;
+}
+.cancelBtn {
+  color: #3877c9;
+  border-color: #3877c9;
+}
+.submitBtn {
+  color: #38c979fb;
+  border-color: #38c979fb;
+}
+.emptyWarning{
+  text-align: center;
+  font-size: 20px;
+  color: #c93838;
+  font-family: var(--nunito);
+  width: 100%;
+}
+@media screen and (max-width: 1000px){
+  .noteDiv {
+    width: calc(100% / 3.4);
+  }
+}
+@media screen and (max-width: 600px){
+  .header{
+    font-size: 23px;
+  }
+  .savedNotes {
+    flex-direction: column;
+  }
+  .noteDiv {
+    width: 100%;
+    margin: 10px auto;
+  }
+  .addNoteDiv {
+    width: calc(100% - 10px);
+    margin: 20px auto;
+  }
+}
