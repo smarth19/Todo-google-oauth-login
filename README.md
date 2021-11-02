@@ -28,7 +28,11 @@ Now open a mongoD in windows powershell
 ** To Start Application **
 
 For Client
-Go to ./toDo in terminal and type "npm start" and enter
+Go to ./toDo in terminal and type 
+1. Type "npm install" to install dependencies
+2. Then Type "npm start" and enter
 
 For Backend
-Go to ./backend in another terminal instance and type "node server" or "nodemon server" and enter
+Go to ./backend in another terminal instance 
+1. Type "npm install" to install dependencies
+2. Then Type "node server" or "nodemon server" and enter
